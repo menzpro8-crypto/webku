@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Muhammad Hamid | Programmer Pemula</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="deep.css">
+</head>
+<body>
+    <!-- Matrix Rain Effect -->
+    <div class="matrix-rain" id="matrixRain"></div>
+
+    <!-- Scanline Effect -->
+    <div class="scanline"></div>
+
+    <!-- Partikel Background -->
+    <div class="particles" id="particles"></div>
+
+
+
+    <!-- Interactive Terminal -->
+    <div class="interactive-terminal" id="interactiveTerminal">
+        <div class="terminal-header" id="terminalHeader">
+            <div class="terminal-title">terminal@hamid:~</div>
+            <div class="terminal-controls">
+                <span class="minimize" id="terminalMinimize"></span>
+                <span class="maximize" id="terminalMaximize"></span>
+                <span class="close" id="terminalClose"></span>
+            </div>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+            <div class="terminal-output">Selamat datang di terminal interaktif!<br>Ketik 'help' untuk melihat daftar perintah yang tersedia.</div>
+            <div class="terminal-input-line">
+                <span class="terminal-prompt">hamid@portfolio:~$</span>
+                <input type="text" class="terminal-input" id="terminalInput" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Porto<span>folio</span></a>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-elements">
+            <div class="floating-element" style="top: 10%; left: 5%; animation-delay: 0s;"><i class="fas fa-code"></i></div>
+            <div class="floating-element" style="top: 20%; right: 10%; animation-delay: 2s;"><i class="fas fa-laptop-code"></i></div>
+            <div class="floating-element" style="bottom: 30%; left: 15%; animation-delay: 4s;"><i class="fas fa-mobile-alt"></i></div>
+            <div class="floating-element" style="bottom: 20%; right: 5%; animation-delay: 6s;"><i class="fas fa-server"></i></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Halo, Saya Hamid.">Halo, Saya Hamid.</h1>
+                <p>Siswa SMK AL BASTHOMI dibawah bimbingan Pak Agus, saya baru memulai dunia coding web, pengalaman saya baru setelah saya masuk kelas 11 dengan ini saya mempersembahkan portofolio.</p>
+                <a href="#projects" class="btn">Lihat Proyek Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Siswa yang biasa biasa saja</h3>
+                    <p>Saya adalah seorang siswa kelas IX RPL A SML AL BASTHOMI yang baru memulai dunia percodingan, saya baru bisa HTML CSS dan JAVASCRIPT.</p>
+                    <p>Saya masih pemula dan masih belom tau apa apa tapi dengan ini saya belajar bersungguh sungguh,dan juga saya juga sudah ada project.</p>
+                    
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-title">terminal@hamid:~</div>
+                            <div class="terminal-controls">
+                                <span class="close"></span>
+                                <span class="minimize"></span>
+                                <span class="maximize"></span>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="terminal-prompt">hamid@portfolio:~$</span> whoami</p>
+                            <p>Muhammad Hamid Rasydan</p>
+                            <p><span class="terminal-prompt">hamid@portfolio:~$</span> status --coding</p>
+                            <p>Learning HTML, CSS, JavaScript</p>
+                            <div class="terminal-input-line">
+                                <span class="terminal-prompt">hamid@portfolio:~$</span>
+                                <input type="text" class="terminal-input" id="terminalInputAbout" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JAVASCRIPT</span>
+                            <span class="skill-percent">20%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="20"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">1%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="1"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">SQL/Database</span>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="0"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek Terbaru</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Home page</h3>
+                        <p>Home page sederhana yang belajar dari guru saya.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="btn">Detail Proyek</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-circle-user"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Biodata</h3>
+                        <p>Biodata diri saya lengkap.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <a href="#" class="btn">Detail Proyek</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Game Sederhana</h3>
+                        <p>Game sederhana menggunakan JavaScript.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="game.html" class="btn">Detail Proyek</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <p>Jika Anda tertarik untuk berkolaborasi atau memiliki pertanyaan, jangan ragu untuk menghubungi saya.</p>
+                <a href="mailto:menzpro8@gmail.com" class="btn">Email Saya</a>
+                <div class="social-links">
+                    <a href="https://github.com/menzpro8-crypto?tab=repositories" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/+6287822706235" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://tiktok.com/" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://instagram.com/medz_gtc?igsh=MXd4YXRieWpzM3BoMg==" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Muhammad Hamid Rasydan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="deep.js"></script>
+    <script src="reptile.js"></script>
+</body>
+</html>

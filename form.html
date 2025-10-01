@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        </style>
+        <body>
+
+        <h3>Masukkan identitas anda</h3>
+        <style>
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+
+        <div>
+            <form action="galeri.html">
+                <label for="fname">Nama Awal</label>
+                <input type="text" id="fname"
+                name="Nama awal" placeholder="Nama kalian" required>
+                <label for="lname">Nama akhir</label>
+                <input type="text" id="lname"
+                name="Nama akhir" placeholder="Nama akhir kamu" required>
+                <label for="country">Negara</label>
+                <select id="country" name="Negara">
+                    <option
+                    value="none">None</option>
+                    <option value="inggris">Inggris</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="konoha">Konoha</option>
+                </select>
+                <input type="submit" value="Kirim">
+                </form>
+                </div>
+                </body>
+                </html>
+                
